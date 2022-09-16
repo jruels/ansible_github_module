@@ -7,7 +7,7 @@
   tasks:
     - name: Create an Awesome GitHub Repo
       github_repo:
-        github_auth_key: "{{ github_key}}"
+        github_auth_key: "{{ github_token }}"
         username: "{{ github_username }}"
         name: "Hello-World"
         description: "First repo created with custom Ansible module"
@@ -22,7 +22,7 @@
 
     - name: Delete GitHub Repo
       github_repo:
-        github_auth_key:  "{{ github_key }}"
+        github_auth_key:  "{{ github_token }}"
         username: "{{ github_username }}"
         name: "Hello-World"
         state: absent
