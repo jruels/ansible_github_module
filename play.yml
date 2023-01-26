@@ -4,6 +4,7 @@
       prompt: Enter your GitHub Username
   vars:
     - ansible_python_interpreter: "/usr/bin/python3"
+    - github_token: "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"
   tasks:
     - name: Create an Awesome GitHub Repo
       github_repo:
@@ -24,7 +25,7 @@
       github_repo:
         github_auth_key:  "{{ github_token }}"
         username: "{{ github_username }}"
-        name: "Hello-World"
+        name: "{{ repo_name }}"
         state: absent
       tags:
         - delete_repo
