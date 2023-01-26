@@ -4,7 +4,6 @@
       prompt: Enter your GitHub Username
   vars:
     - ansible_python_interpreter: "/usr/bin/python3"
-    - github_token: "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"
   tasks:
     - name: Create an Awesome GitHub Repo
       github_repo:
