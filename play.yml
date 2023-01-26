@@ -9,7 +9,7 @@
       github_repo:
         github_auth_key: "{{ github_token }}"
         username: "{{ github_username }}"
-        name: "Hello-World"
+        name: "{{ repo_name }}"
         description: "First repo created with custom Ansible module"
         private: yes
         has_issues: no
